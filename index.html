@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TEST -->
+    <main class="container">
+      <section class="sub-container">
+        <h1>Password Generator</h1>
+        <!-- 1st Section -->
+        <section class="password-gen-container">
+          <div class="random-number-input">P4$5WOrD!</div>
+          <div class="right">
+            <div class="copied-modal hidden">
+              <p>Copied</p>
+            </div>
+            <div class="clipboard-image">
+              <img src="./assets/images/icon-copy.svg" />
+            </div>
+          </div>
+        </section>
+        <!-- 2nd Section -->
+        <section class="detail-section">
+          <div class="character-length-container">
+            <p>Character length</p>
+            <p class="character-length">0</p>
+          </div>
+          <!-- RANGE OF CHARACTERS -->
+          <div class="range-container">
+            <input type="range" class="range-bar" min="0" max="100" step="10" />
+            <!-- CHANGES HEre -->
+          </div>
+          <!-- PROPERTIES -->
+          <div class="checkbox-container">
+            <div class="first-checkbox align">
+              <input
+                type="checkbox"
+                id="uppercase-checkbox"
+                class="checkbox-class"
+              />
+              <label for="Uppercase" class="label"
+                >Include Uppercase Letters</label
+              >
+            </div>
+            <div class="second-checkbox align">
+              <input
+                type="checkbox"
+                id="lowercase-checkbox"
+                class="checkbox-class"
+              />
+              <label for="lowercase-letters" class="label"
+                >Include Lowercase Letters</label
+              >
+            </div>
+            <div class="third-checkbox align">
+              <input
+                type="checkbox"
+                id="numbers-checkbox"
+                class="checkbox-class"
+              />
+              <label for="Include-Numbers" class="label">Include Numbers</label>
+            </div>
+            <div class="fourth-checkbox align">
+              <input
+                type="checkbox"
+                id="symbols-checkbox"
+                class="checkbox-class"
+              />
+              <label for="symbols" class="label">Include Symbols</label>
+            </div>
+          </div>
+
+          <!-- STRENGTH CONTAINER -->
+          <div class="strength-container">
+            <div class="col-1">
+              <p>STRENGTH</p>
+            </div>
+            <div class="col-2">
+              <span class="vertical-bar"></span>
+              <span class="vertical-bar"></span>
+              <span class="vertical-bar"></span>
+              <span class="vertical-bar"></span>
+            </div>
+          </div>
+          <!-- Button-Container -->
+          <div class="button-container">
+            <button class="generate-btn">GENERATE</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
